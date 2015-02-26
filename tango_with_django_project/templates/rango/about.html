@@ -1,12 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'rango/base.html' %}
 
 {% load staticfiles %}
 
 {% block title %}About{% endblock %}
 
 {% block body_block %}
-        <h1>This tutorial has been put together by Elizabeth Joseph, 2178758J</h1>
-        <a href="/rango/index/">Index</a><br />
-        <img src="{% static "images/088.jpg" %}" alt="Picture of Me" />
+        <div class="page-header">
+        <h1>About</h1>
+        </div>
+        <p>This tutorial has been put together by Elizabeth Joseph, 2178758J</p>
+
+
+        <a href="/rango/">Click to return to the index page</a><br />
+        <img width="110" height="150" src="{% static "images/088.jpg" %}" alt="Picture of Me" />
 
 {% endblock %}
